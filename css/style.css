@@ -72,6 +72,12 @@ header {
     margin-bottom: 2rem;
 }
 
+#description-field {
+    width: 40rem;
+    border: solid 1px #3d3c3c;
+    padding-top: 1rem;
+}
+
 /* elementos de formulario */
 
 label {
