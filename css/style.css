@@ -11,6 +11,7 @@ body {
 html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 /* fontes */
@@ -110,4 +111,27 @@ label, input {
 
 .options {
     display: flex;
+}
+
+.btn-cadastrar {
+    background-color: blueviolet;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.required-field {
+    color: red;
+}
+
+.buttons-form input{
+    display: inline-block;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.buttons-form input:hover {
+    background-color: #fff;
+    color: blueviolet;
+    border-color: blueviolet;
 }

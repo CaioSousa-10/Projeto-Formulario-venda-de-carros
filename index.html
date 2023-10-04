@@ -28,42 +28,42 @@
             <form action="registre.phph" method="post">
 
                 <div>
-                    <label for="ad-title">Título do anúncio</label>
-                    <input class="input-text"  type="text" name="ad-title" placeholder="Um título para anunciar seu carro" required>
+                    <label for="ad-title">Título do anúncio<span class="required-field">*</span></label>
+                    <input class="input-text"  type="text" name="ad-title" placeholder="Um título para anunciar seu carro" required minlength="1" maxlength="30">
                 </div>
 
                 <div>
-                    <label for="price">Preço</label>
+                    <label for="price">Preço<span class="required-field">*</span></label>
                     <input class="input-text"  type="number" name="price" placeholder="Defina o preço" required>
                 </div>
 
                 <div>
-                    <label for="description">Descrição</label>
+                    <label for="description">Descrição<span class="required-field">*</span></label>
                     <textarea name="description" id="description-field" placeholder="Aqui você coloca os detalhes do veiculo. Por exemplo se ele tem algum arranhão"></textarea>
                 </div>
 
                 <div>
-                    <label for="brand">Marca</label>
+                    <label for="brand">Marca<span class="required-field">*</span></label>
                     <input class="input-text"  type="text" name="brand" placeholder="Digite a marca do veículo" required>
                 </div>
 
                 <div>
-                    <label for="model">Modelo</label>
+                    <label for="model">Modelo<span class="required-field">*</span></label>
                     <input class="input-text"  type="text" name="model" placeholder="Digite o modelo do veículo" required>
                 </div>
 
                 <div>
-                    <label for="mileage">Kilometragem</label>
+                    <label for="mileage">Kilometragem<span class="required-field">*</span></label>
                     <input class="input-text"  type="number" name="mileage" placeholder="Digite a kilometragem do veículo" required>
                 </div>
 
                 <div>
-                    <label for="purchase-date">Data de Compra</label>
-                    <input class="input-text" type="date" name="purchase-date">
+                    <label for="purchase-date">Data de Compra<span class="required-field">*</span></label>
+                    <input class="input-text" type="date" name="purchase-date" required>
                 </div>
 
                 <div>
-                    <label for="type-of-exchange">Tipo de câmbio</label>
+                    <label for="type-of-exchange">Tipo de câmbio<span class="required-field">*</span></label>
                     <div class="radio">
                         <input type="radio" value="Manual" name="type-of-exchange">
                         <label for="Manual">Manual</label>
@@ -74,7 +74,6 @@
                         <input type="radio" value="semi-automatico" name="type-of-exchange">
                         <label for="semi-automatico">Semi-Automático</label>
                     </div>
-                    
                 </div>
 
                 <div>
@@ -128,6 +127,16 @@
 
                     </div>
 
+                </div>
+
+                <div>
+                    <label for="pictures-car">Fotos do Carro<span class="required-field">*</span></label>
+                    <input class="input-text" type="file" name="pictures-car" multiple accept="image/png, image/jpg, image/jpeg" required>
+                </div>
+
+                <div class="buttons-form" >
+                    <input class="btn-cadastrar" type="submit" value="cadastrar">
+                    <input class="btn-cadastrar" type="reset" value="limpar">
                 </div>
 
             </form>
