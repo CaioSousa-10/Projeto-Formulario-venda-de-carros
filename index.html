@@ -42,6 +42,94 @@
                     <textarea name="description" id="description-field" placeholder="Aqui você coloca os detalhes do veiculo. Por exemplo se ele tem algum arranhão"></textarea>
                 </div>
 
+                <div>
+                    <label for="brand">Marca</label>
+                    <input class="input-text"  type="text" name="brand" placeholder="Digite a marca do veículo" required>
+                </div>
+
+                <div>
+                    <label for="model">Modelo</label>
+                    <input class="input-text"  type="text" name="model" placeholder="Digite o modelo do veículo" required>
+                </div>
+
+                <div>
+                    <label for="mileage">Kilometragem</label>
+                    <input class="input-text"  type="number" name="mileage" placeholder="Digite a kilometragem do veículo" required>
+                </div>
+
+                <div>
+                    <label for="purchase-date">Data de Compra</label>
+                    <input class="input-text" type="date" name="purchase-date">
+                </div>
+
+                <div>
+                    <label for="type-of-exchange">Tipo de câmbio</label>
+                    <div class="radio">
+                        <input type="radio" value="Manual" name="type-of-exchange">
+                        <label for="Manual">Manual</label>
+
+                        <input type="radio" value="Automatico" name="type-of-exchange">
+                        <label for="Automatico">Automático</label>
+
+                        <input type="radio" value="semi-automatico" name="type-of-exchange">
+                        <label for="semi-automatico">Semi-Automático</label>
+                    </div>
+                    
+                </div>
+
+                <div>
+                    <label for="opcionals">Opcionais</label>
+
+                    <div class="options-sessions" >
+
+                        <span class="options" >
+                            <input type="checkbox" name="optinals[]" value="Airbag">
+                            <label for="Airbag">Airbag</label>
+                        </span>
+
+                        <span class="options" >
+                            <input type="checkbox" name="optinals[]" value="alarm">
+                            <label for="alarm">Alarme</label>
+                        </span>
+
+                        <span class="options" >
+                            <input type="checkbox" name="optinals[]" value="air-conditioning">
+                            <label for="air-conditioning">Ar Condicionado</label>
+                        </span>
+
+                        <span class="options" >
+                            <input type="checkbox" name="optinals[]" value="reverse-camera">
+                            <label for="reverse-camera">Câmera de ré</label>
+                        </span>
+
+                    </div>
+
+                    <div class="options-sessions" >
+
+                        <span class="options" >
+                            <input type="checkbox" name="optinals[]" value="track-assistant">
+                            <label for="track-assistant">Assistente de Pista</label>
+                        </span>
+
+                        <span class="options" >
+                            <input type="checkbox" name="optinals[]" value="Airbag">
+                            <label for="Airbag">Partida Keyless</label>
+                        </span>
+
+                        <span class="options" >
+                            <input type="checkbox" name="optinals[]" value="Airbag">
+                            <label for="Airbag">Integração com celular</label>
+                        </span>
+
+                        <span class="options" >
+                            <input type="checkbox" name="optinals[]" value="Airbag">
+                            <label for="Airbag">Banco de couro</label>
+                        </span>
+
+                    </div>
+
+                </div>
+
             </form>
 
         </section>
